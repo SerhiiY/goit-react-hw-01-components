@@ -1,0 +1,41 @@
+.StatsSection {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  width: fit-content;
+  margin: 10px;
+  box-shadow: 2px 2px 3px rgb(220,220,220);
+}
+
+.StatsTitle {
+  height: 60px;
+  font-size: 110%;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+
+.StatsStatList {
+  display: flex;
+  flex-direction: row;
+}
+
+.StatsItem {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60px;
+  padding: 5px 0;
+  width: 60px;
+  color: #fff;
+}
+
+.StatsLabel {
+  display: block;
+  font-size: 80%;
+}
+
+.StatsPercentage {
+  display: block;
+}
