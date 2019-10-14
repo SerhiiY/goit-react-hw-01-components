@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './style.module.css';
+import PropTypes from 'prop-types';
 
 const colorFn = (dark) => { 
   const r = Math.random() * (255 - dark),
@@ -25,6 +26,16 @@ const Stats = ({ title, stats }) => {
       </ul>
     </section>
   )
+}
+
+Stats.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};
+
+Stats.defaultProps = {
+  title: '',
+  stats: [],
 }
 
 export default Stats;

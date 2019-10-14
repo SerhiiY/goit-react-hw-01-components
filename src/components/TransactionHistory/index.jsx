@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './style.module.css';
+import PropTypes from 'prop-types';
 
 const TransactionHistory = ({ items }) => {
   const rows = items.map(el => 
@@ -24,6 +25,14 @@ const TransactionHistory = ({ items }) => {
       </tbody>
     </table>
   )
+}
+
+TransactionHistory.propTypes = {
+  items: PropTypes.array,
+};
+
+TransactionHistory.defaultProps = {
+  items: [],
 }
 
 export default TransactionHistory;

@@ -1,10 +1,11 @@
 {
-  "name": "my-app",
-  "homepage": "https://myusername.github.io/my-app",
+  "name": "goit-react-hw-01-components",
+  "homepage": "https://serhiiy.github.io/goit-react-hw-01-components/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
