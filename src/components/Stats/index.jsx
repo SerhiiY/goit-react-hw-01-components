@@ -1,17 +1,11 @@
 import React from 'react';
 import css from './style.module.css';
 import PropTypes from 'prop-types';
-
-const colorFn = (dark) => { 
-  const r = Math.random() * (255 - dark),
-        g = Math.random() * (255 - dark),
-        b = Math.random() * (255 - dark);
-  return `rgb(${r},${g},${b})`;
-}
+import randomColor from '../helpers/randomColor';
 
 const Stats = ({ title, stats }) => { 
   const statItems = stats.map(el =>
-    <li className={css.StatsItem} style={{backgroundColor: colorFn(150)}} key={el.id}>
+    <li className={css.StatsItem} style={{backgroundColor: randomColor(150)}} key={el.id}>
       <span className={css.StatsLabel}>{el.label}</span>
       <span className={css.StatsPercentage}>{el.percentage + '%'}</span>
     </li>
